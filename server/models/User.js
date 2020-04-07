@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const moment = require('moment')
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 
@@ -24,7 +25,7 @@ const userSchema = mongoose.Schema({
     role: {
         type: Number,
         default: 0
-    },
+    }, 
     cart: {
         type: Array,
         default: []

@@ -68,7 +68,7 @@ function LandingPage() {
         return <Col lg={6} md={8} xs={24}>
             <Card
                 hoverable={true}
-                cover={<a href={`/product/₦{product._id}`} > <ImageSlider images={product.images} /></a>}
+                cover={<a href={`/product/${product._id}`} > <ImageSlider images={product.images} /></a>}
             >
                 <Meta
                     title={product.title}
@@ -143,7 +143,7 @@ function LandingPage() {
     return (
         <div style={{ width: '75%', margin: '3rem auto' }}>
             <div style={{ textAlign: 'center' }}>
-                <h2>  Let's Travel Anywhere  <Icon type="rocket" />  </h2>
+                <h2> welcome o willscafe  <Icon type="rocket" />  </h2>
             </div>
 
 
@@ -177,7 +177,7 @@ function LandingPage() {
 
             {Products.length === 0 ?
                 <div style={{ display: 'flex', height: '300px', justifyContent: 'center', alignItems: 'center' }}>
-                    <h2>No post yet...</h2>
+                    <h2>Nothing to display...</h2>
                 </div> :
                 <div>
                     <Row gutter={[16, 16]}>
