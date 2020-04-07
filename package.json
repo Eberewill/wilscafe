@@ -1,5 +1,5 @@
 {
-  "name": "react-boiler-plate",
+  "name": "willscafe",
   "version": "1.0.0",
   "description": "react boiler plate",
   "main": "index.js",
@@ -11,9 +11,12 @@
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
     "frontend": "npm run start --prefix client",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+ 
+    
   },
-  "author": "John ahn",
+  "author": "WIlliams Eberechi",
   "license": "ISC",
   "dependencies": {
     "async": "^3.2.0",
